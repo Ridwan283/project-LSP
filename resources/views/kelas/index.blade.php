@@ -23,7 +23,8 @@
             <tr>
                 <td>{{ $loop->iteration }}</td>
                 <td>{{ $k->nama_kelas }}</td>
-                <td>{{ $k->jurusan->nama_jurusan }}</td>
+                <td>{{ $k->jurusan->nama_jurusan }}</td> <!--//memanggil variable 
+                jurusan dari data yang sudang dimasukan di table nama_jurusan -->
                 <td>
                     <a href="/kelas/edit/{{ $k->id }}" class="button-warning">EDIT</a>
                     <a href="/kelas/destroy/{{ $k->id }}" onclick="return confirm('Yakin hapus?')" class="button-danger">HAPUS</a>

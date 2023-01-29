@@ -17,6 +17,7 @@
                         <option value="" disabled selected hidden>PILIH JURUSAN</option>
                     @foreach($jurusan as $jur)
                     <option value="{{ $jur->id }}">{{ $jur->nama_jurusan }}</option>
+                    <!-- {{ $jur->id }}=sesuai dengan nomer id di tabel jurusan -->
                 @endforeach
 
                 </select>
