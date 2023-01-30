@@ -23,7 +23,7 @@
                 <th>UTS</th>
                 <th>UAS</th>
                 <th>NA</th>
-                @if(session('user')->role == 'guru')
+                @if(session('user')->role == 'guru')<!-- user guru yang diberi akses  bisa menambahkan dan menghapus mengedit  data nilai -->
                 <th>ACTION</th>
                 @endif
             </tr>

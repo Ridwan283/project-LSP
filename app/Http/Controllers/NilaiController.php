@@ -56,7 +56,7 @@ class NilaiController extends Controller
             'uts' => 'required|numeric',
             'uas' => 'required|numeric'
         ]);
-
+        // mengoperasikan perhitungan dri tabel nilai nilai
         $data_nilai['na'] = round(($request->uh + $request->uts + $request->uas) / 3);
         Nilai::create($data_nilai);
         return redirect('/nilai/index')->with('success', 'Data Nilai berhasil ditambahkan');
